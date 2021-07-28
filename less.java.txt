@@ -1,0 +1,9 @@
+services: 
+    db:
+        image: postgres
+        volumes: 
+           - ./data/db: /var/lib/postgres/data
+        environment: 
+            - POSTGRES_DB: test_db
+            - POSTGRES_USERNAME: testuser
+            - POSTGRES_PASSWORD: test@123
